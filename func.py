@@ -360,7 +360,7 @@ def callback_timer(context: CallbackContext):
 
 
 
-    if int(now[:2]) == 6  :
+    if int(now[:2]) == 2  :
 
         for e in all_users:
             e=e[0]
@@ -496,7 +496,7 @@ def callback_timer(context: CallbackContext):
                     connect.commit()
                 except:
                     pass
-    if int(now[:2]) ==7:
+    if int(now[:2]) ==3:
         for e in all_users:
             e=e[0]
             s = cur.execute("""SELECT Stage FROM Users WHERE TG_ID= "{}" """.format(e)).fetchall()
